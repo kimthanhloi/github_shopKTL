@@ -1,0 +1,339 @@
+:root {
+    pink: #ee4266;
+}
+* {
+    /* scroll-behavior: smooth;
+    overscroll-behavior: contain; */
+    font-size: 16px;
+}
+header {
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 84px;
+    width: 100%;
+    max-width: 100%;
+}
+.header_in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_header > img {
+    width: 150px;
+}
+.menu > ul {
+    display: flex;
+}
+.menu > ul > li {
+    list-style-type: none;
+}
+
+.menu_phukien::before,
+.menu_giaynu::before,
+.menu_sale::before,
+.menu_giaynam::before,
+.menu_balo::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+
+    bottom: 30px;
+    border-bottom: 3px solid #ff6974;
+}
+.menu > ul > li > a {
+    padding: 0 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.header_login {
+    padding: 0 10px;
+    display: flex;
+}
+.register,
+.login {
+    color: black;
+}
+.register > a,
+.login > a {
+    color: black;
+    text-decoration: none;
+}
+.header_login > a {
+    text-decoration: none;
+}
+.register {
+    font-weight: 700;
+}
+.login {
+    font-weight: 700;
+    padding: 0 15px;
+}
+.register:hover,
+.login:hover {
+    /* color: white; */
+    cursor: pointer;
+}
+.banner > img {
+    width: 100%;
+}
+.item {
+    height: 200px;
+    width: 100%;
+    background-color: #ee4266;
+}
+.item_product_img > img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+.item_product {
+    margin-bottom: 10px;
+}
+.item_product_content {
+    text-decoration: none;
+}
+.title {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: black;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    /* -o-text-overflow: ellipsis; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.price {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.container_title {
+    padding: 1.875rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.seenall_product {
+    font-size: 1.25rem;
+    color: black;
+    text-align: center;
+    padding: 1.875rem 0;
+    display: block;
+    border-bottom: 1px solid #cccccc;
+}
+.contact_shop {
+    margin-top: 1.875rem;
+}
+.contact_shop_item > ul > li {
+    list-style-type: none;
+}
+.contact_shop_item > p {
+    padding: 5px 0;
+}
+.contact_shop_item > ul > li > a {
+    color: black;
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
+}
+.righticon {
+    font-size: 0.8rem;
+    padding-right: 4px;
+}
+.icons {
+    margin-top: 10px;
+}
+.icons > i {
+    padding: 0 5px;
+    font-size: 1.875rem;
+}
+footer {
+    background-color: #111111;
+    color: white;
+    margin-top: 1.875rem;
+    padding-top: 1.875rem;
+}
+h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+.ft_note {
+}
+.title_ft {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    padding: 10px 0;
+}
+.menu_ft > ul > li {
+    list-style: none;
+}
+.menu_ft > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+.ft_sologan_item {
+    margin-top: 1.25rem;
+}
+.ft_sologan_item > p {
+    padding: 5px 0;
+}
+.ft_sologan_item-img {
+    padding-top: 1.25rem;
+    text-align: right;
+}
+.bars > i {
+    font-size: 1.4rem;
+}
+
+.paginnation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+.paginnation > li {
+    list-style: none;
+    margin: 0 4px;
+    height: 32px;
+    border: 1px solid black;
+    line-height: 32px;
+    min-height: 32px;
+    border-radius: 3px;
+}
+.paginnation > li:first-child {
+    pointer-events: none;
+    border: 1px solid #d9d9d9 !important;
+}
+
+.paginnation > li > a {
+    color: #111111;
+
+    text-decoration: none;
+    padding: 6px 13px;
+}
+.paginnation > li:hover {
+    background-color: #111111;
+}
+.paginnation > li > a:hover {
+    color: white;
+}
+.price-old {
+    color: #000000;
+    text-align: center;
+    text-decoration-line: line-through;
+    font-size: 0.9rem;
+}
+.item_product_detail {
+    text-align: center;
+}
+/* serach  */
+.box {
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 55px;
+    height: 33px;
+    background: none;
+    border: 3px solid rgb(32 36 40);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: 0.5s;
+}
+.box:hover input {
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(32 36 40);
+    transition: 0.2s;
+}
+.box:hover i {
+    opacity: 0;
+    z-index: -1;
+}
+.edit_cmt_user:hover {
+    cursor: pointer;
+    border-radius: 20px;
+
+    background-color: #e3e3e3 !important;
+}
+.edit_cmt_user_from {
+    /* display: none; */
+}
+/* select option */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    position: relative;
+    display: flex;
+    width: 15em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: 0.25em;
+}
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.25s all ease;
+}
+.select:hover::after {
+    color: #23b499;
+}

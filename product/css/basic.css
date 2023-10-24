@@ -1,0 +1,99 @@
+*{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.bold{
+    font-size: 1.875rem;
+    font-weight:500;
+}
+.center{
+    text-align: center;
+}
+.iconwhite{
+    padding-right: 5px;
+    color: red;
+}
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+/* transition product */
+.item_product:hover .item_product_img>img{
+    transform: scale(1.1);
+    
+}
+.item_product_img>img{
+    transition: 1.2s;
+}
+.overplay{
+    z-index: 0;
+}
+.icon_giohang{
+    background-color: black;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+    box-shadow: 0 0 3px white;
+}
+
+.icon_giohang:hover{
+   
+    transition: 0.2s linear;
+    color:#ee4266 ;
+}
+
+.user_login{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+.user_login>li:hover .user_login_chil{
+   
+    display: block;
+}
+.user_login_chil{
+    transition: all 5s;
+    display: none;
+    position: absolute;
+    width: 250px;
+    right: 0px;
+    background: #191a1a;
+    border-radius: 6px;
+}
+.user_login_chil>li{
+   
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none;
+   
+}
+.user_login_chil>li:hover{
+    
+    background-color: #282929;
+}
+.user_login_chil>li>a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    cursor: pointer !important; 
+    
+}
